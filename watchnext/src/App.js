@@ -4,6 +4,9 @@ import { useState, useEffect } from 'react';
 import Layout from './component/Layout.js';
 import { Routes, Route } from 'react-router-dom';
 import Home from './component/home/Home.js';
+import Header from './component/header/Header.js';
+import Trailer from './component/trailer/Trailer.js';
+
 
 function App() {
 
@@ -28,9 +31,11 @@ function App() {
 
   return (
     <div className="App">
+      <Header/>
     <Routes>
-      <Route path='/' element={<Layout/>}>
-        <Route path='/' element={<Home movies ={movies}/>}></Route>
+      <Route path="/" element={<Layout/>}>
+        <Route path="/" element={<Home movies ={movies}/>}></Route>
+        <Route path="/Trailer/:ytTrailerId" element={<Trailer/>}></Route>
       </Route>
     </Routes>    
     </div>
