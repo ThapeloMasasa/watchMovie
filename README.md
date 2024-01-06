@@ -9,6 +9,6 @@ Since this is a full stack web application I used MongoDB for the database, Java
 
 
 ![Screenshot 2024-01-05 at 11 44 16 PM](https://github.com/ThapeloMasasa/watchMovie/assets/73863365/06f2741f-5c84-44fe-81c7-22791eaf51eb)
-![Screenshot 2024-01-05 at 11 44 30 PM]
 
-(https://github.com/ThapeloMasasa/watchMovie/assets/73863365/2c5696fb-181a-4c6e-9bb3-a672cc3724ad)
+
+![Screenshot 2024-01-05 at 11 44 30 PM](https://github.com/ThapeloMasasa/watchMovie/assets/73863365/89130987-676b-4de6-8cea-7245684f6a09)
