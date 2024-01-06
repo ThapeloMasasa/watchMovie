@@ -5,15 +5,11 @@ import './Hero.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
 import {Link, useNavigate} from 'react-router-dom';
-import Button from 'react-bootstrap/esm/Button';
+
 
 
 export const Hero = ({movies}) => {
-    const navigate = useNavigate()
-
-    function reviews(movieId){
-        navigate(`/Reviews/${movieId}`);
-    }
+   
     console.log('Here are the movies', movies)
   return (
     <div className='movie-carousel-container'>
@@ -34,11 +30,6 @@ export const Hero = ({movies}) => {
                                                     <FontAwesomeIcon className='play-button-icon' icon= {faCirclePlay}/>
                                             </div>
                                             </Link>
-                                        </div>
-                                        <div className='movie-buttons-container'>
-                                            <div className='movie-review-button-container'>
-                                                <Button variant= "info" onClick={()=> reviews(movie.imdbId)}>Reviews</Button>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>

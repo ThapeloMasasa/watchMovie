@@ -7,6 +7,21 @@
     border-radius: 20px;
     
   }
+  .movie-review-button-container{
+    height: 0px; 
+    width: 0px;
+    margin-left: 550px;
+}
+.movie-buttons-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+.reviews{
+    display: flex;
+    flex-direction: row;
+}
   
   .card-image {
     flex: 1; 
