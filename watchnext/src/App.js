@@ -13,7 +13,7 @@ function App() {
 
   const [movies, setMovies] = useState([]);
   const [reviews, setReviews] = useState([]);
-
+  const [movie, setMovie] = useState();
   const getMovies = async () => {
     try{
       const response = await api.get('/api/v1/movies');
@@ -27,12 +27,13 @@ function App() {
     
   }
 
-    const getMovieData = async(MovieId) =>{
+    const getMovieData = async(movieId) =>{
       try{
         const response = await api.get(`/api/v1/movies/${movieId}`);
         const singleMovie = response.data;
+        console.log("single movie", singleMovie)
         setMovie(singleMovie);
-        setReviews(singleMovie.reviews)
+        setReviews(singleMovie.reviewIds)
       }catch(err){
         console.log(err)
       }

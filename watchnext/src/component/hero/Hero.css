@@ -13,7 +13,7 @@
     width: 100%;
 }
 .movie-card-container{
-    height: 550px;
+    height: 1200px;
     background-color: black;
 }
 .movie-card{
@@ -47,10 +47,13 @@
 
 .play-button-icon-container{
     padding: 0px;
-    margin: 0px;
+    margin-top: 150px;
     width:150px;
 }
-
+.movie-review-button-container{
+    height: 0px; 
+    width: 0px;
+}
 .play-button-icon{
     padding:0px;
     margin:0px;

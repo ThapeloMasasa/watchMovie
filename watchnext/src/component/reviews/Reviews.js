@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef} from "react";
 import api from '../../api/axiosConfig';
 import { useParams } from "react-router-dom";
-import { Container, TableRow, Col } from "@material-ui/core";
+import { Container, Row, Col } from "react-bootstrap";
 import ReviewForm from '../reviewForm/ReviewForm';
 import React from "react";
 
@@ -38,7 +38,7 @@ const Reviews = ({getMovieData, movie, reviews, SetReviews}) => {
                             </h3> 
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className="mt-2">
                         <Col>
                             <img src={movie?.poster} alt=""/>
                         </Col>
