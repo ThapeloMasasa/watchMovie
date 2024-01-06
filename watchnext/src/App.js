@@ -7,7 +7,7 @@ import Home from './component/home/Home.js';
 import Header from './component/header/Header.js';
 import Trailer from './component/trailer/Trailer.js';
 import Reviews from './component/reviews/Reviews.js';
-
+import WatchList from './component/watchList/WatchList';
 
 function App() {
 
@@ -51,6 +51,7 @@ function App() {
         <Route path="/" element={<Home movies ={movies}/>}></Route>
         <Route path="/Trailer/:ytTrailerId" element={<Trailer/>}></Route>
         <Route path="/Reviews/:movieId" element={<Reviews getMovieData={getMovieData} movie ={movie} reviews={reviews} SetReviews={setReviews}/>}></Route>
+        <Route path="/watchList" element={<WatchList movies ={movies}/>}></Route>
       </Route>
     </Routes>    
     </div>
