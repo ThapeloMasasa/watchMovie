@@ -1,4 +1,4 @@
-# NextWatch 
+# watchMovie 
 This is a full stack movie platfrom that enables the users to see different types of movies and their trailers. Then the user can view and write reviews
 about the movie. They will get displayed in the reviews page.
 
